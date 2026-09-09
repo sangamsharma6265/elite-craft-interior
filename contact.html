@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Craft Interior | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Elite Craft <span>Interior</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="btn-nav active">Book Consultation</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact" style="margin-top: 80px;">
+        <h2>Start Your Project With Us</h2>
+        <p>Fill out the form below or reach out to us directly through call, WhatsApp, or email.</p>
+        
+        <!-- Quick Contact Info Cards -->
+        <div class="quick-contact-container" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+            
+            <!-- Call Box -->
+            <a href="tel:8826971800" style="text-decoration: none; color: inherit; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #c5a059; width: 220px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: transform 0.3s;">
+                <h4 style="color: #1a1a1a; margin-bottom: 5px;">Call Us</h4>
+                <p style="color: #666; font-size: 14px; margin: 0;">+91 88269 71800</p>
+            </a>
+
+            <!-- WhatsApp Box -->
+            <a href="https://wa.me/918826971800?text=Hi%2C%20I%20want%20to%20discuss%20an%20interior%20design%20project." target="_blank" style="text-decoration: none; color: inherit; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #25D366; width: 220px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: transform 0.3s;">
+                <h4 style="color: #1a1a1a; margin-bottom: 5px;">WhatsApp</h4>
+                <p style="color: #666; font-size: 14px; margin: 0;">Chat with Us</p>
+            </a>
+
+            <!-- Email Box -->
+            <a href="mailto:Sarvansharma71048@gmail.com" style="text-decoration: none; color: inherit; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #EA4335; width: 220px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: transform 0.3s;">
+                <h4 style="color: #1a1a1a; margin-bottom: 5px;">Email Us</h4>
+                <p style="color: #666; font-size: 14px; margin: 0; word-break: break-all;">Sarvansharma71048@gmail.com</p>
+            </a>
+
+        </div>
+
+        <!-- Enquiry Form -->
+        <form action="/submit-enquiry" method="POST" class="enquiry-form">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label>Project Type</label>
+                <select name="projectType">
+                    <option value="Residential">Residential Interior</option>
+                    <option value="Commercial">Commercial Space</option>
+                    <option value="Renovation">Renovation</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Message / Requirements</label>
+                <textarea name="message" rows="4" placeholder="Tell us about your space..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Submit Enquiry</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Elite Craft Interior. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
