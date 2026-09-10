@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #0f1012; /* Rich Dark Luxury Background Base */
+    background-color: #0f1012;
     color: #e0e0e0;
     line-height: 1.7;
 }
@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 8%;
+    padding: 20px 8%;
     background: rgba(15, 16, 18, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(197, 160, 89, 0.2);
@@ -37,7 +37,7 @@ header {
 }
 
 .logo span {
-    color: #c5a059; /* Luxury Gold Accent */
+    color: #c5a059;
 }
 
 nav {
@@ -72,14 +72,9 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Active Nav Link Styling */
 nav a.active {
     color: #c5a059;
     font-weight: 600;
-}
-
-nav a.btn-nav.active {
-    background-color: #c5a059;
 }
 
 /* Livspace Style Dropdown Styling */
@@ -135,16 +130,6 @@ nav a.btn-nav.active {
     position: relative;
 }
 
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, #0f1012, transparent);
-}
-
 .hero-content {
     max-width: 800px;
     z-index: 1;
@@ -154,7 +139,6 @@ nav a.btn-nav.active {
     font-size: 52px;
     margin-bottom: 20px;
     font-weight: 700;
-    letter-spacing: 1px;
     color: #ffffff;
 }
 
@@ -178,10 +162,97 @@ nav a.btn-nav.active {
 .btn-primary:hover {
     background-color: #dfbc71;
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(197, 160, 89, 0.2);
 }
 
-/* Floating WhatsApp & Call Widget */
+/* Services Page & Section Layout Fix */
+.services {
+    padding: 120px 8% 80px 8%;
+    background: #141619;
+    min-height: 80vh;
+}
+
+.services h1, .services h2 {
+    font-size: 38px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.services p {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #1b1d22;
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 4px solid #c5a059;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Portfolio Section Layout Fix */
+.portfolio {
+    padding: 120px 8% 80px 8%;
+    background: #0f1012;
+    min-height: 80vh;
+}
+
+.portfolio h1, .portfolio h2 {
+    font-size: 38px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    height: 280px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    border-color: #c5a059;
+}
+
+/* Floating WhatsApp & Call Widget (Proper SVG Icons) */
 .floating-widget {
     position: fixed;
     right: 25px;
@@ -199,11 +270,15 @@ nav a.btn-nav.active {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    color: #fff;
-    font-size: 24px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     text-decoration: none;
+}
+
+.float-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: #fff;
 }
 
 .float-btn:hover {
@@ -216,18 +291,14 @@ nav a.btn-nav.active {
 
 .whatsapp-btn:hover {
     background-color: #20ba5a;
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
 }
 
 .call-btn {
-    background-color: #c5a059;
-    color: #0f1012;
-    font-weight: bold;
+    background-color: #007bff;
 }
 
 .call-btn:hover {
-    background-color: #dfbc71;
-    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.5);
+    background-color: #0056b3;
 }
 
 /* Footer */
@@ -240,7 +311,6 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
     header {
         padding: 15px 5%;
@@ -248,23 +318,10 @@ footer {
         gap: 15px;
         position: relative;
     }
-
     .hero {
-        margin-top: 130px;
-        height: 80vh;
+        margin-top: 120px;
     }
-
     .hero h1 {
         font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 }
