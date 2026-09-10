@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tab-title">Elite Craft Interior | Design Ideas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">Elite Craft <span>Interior</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            
+            <!-- Livspace Style Dropdown: Design Ideas -->
+            <div class="dropdown">
+                <a href="#" class="active">Design Ideas ▾</a>
+                <div class="dropdown-content">
+                    <a href="design-detail.html?cat=modular-kitchen">Modular Kitchen Designs</a>
+                    <a href="design-detail.html?cat=wardrobe">Wardrobe Designs</a>
+                    <a href="design-detail.html?cat=bathroom">Bathroom Designs</a>
+                    <a href="design-detail.html?cat=bedroom">Master Bedroom Designs</a>
+                    <a href="design-detail.html?cat=living-room">Living Room Designs</a>
+                    <a href="design-detail.html?cat=false-ceiling">False Ceiling Designs</a>
+                    <a href="design-detail.html?cat=tv-unit">TV Unit Designs</a>
+                </div>
+            </div>
+
+            <!-- Livspace Style Dropdown: Magazine -->
+            <div class="dropdown">
+                <a href="#">Magazine ▾</a>
+                <div class="dropdown-content">
+                    <a href="services.html?cat=decor">Decor & Inspiration</a>
+                    <a href="services.html?cat=expert-advice">Expert Advice</a>
+                    <a href="services.html?cat=vastu">Vastu Tips</a>
+                    <a href="services.html?cat=organisation">Home Organisation</a>
+                </div>
+            </div>
+
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="btn-nav">Book Consultation</a>
+        </nav>
+    </header>
+
+    <!-- Dynamic Design Showcase Section -->
+    <section class="services">
+        <h1 id="main-title" style="font-size: 38px; color: #fff; margin-bottom: 15px;">Design Ideas</h1>
+        <p id="main-desc" style="color: #aaa; font-size: 16px; margin-bottom: 40px;">Explore customized inspirations crafted exclusively for modern homes.</p>
+        
+        <!-- Gallery Grid for Specific Designs -->
+        <div class="portfolio-grid" id="design-gallery">
+            <!-- Dynamically populated via JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Elite Craft Interior. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Floating WhatsApp and Call Widget -->
+    <div class="floating-widget">
+        <a href="https://wa.me/918826971800?text=Hi,%20I%20want%20to%20know%20more%20about%20Elite%20Craft%20interior%20designs." target="_blank" class="float-btn whatsapp-btn" title="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.57L5.06 16.26C4.24 14.93 3.8 13.44 3.8 11.91C3.8 7.41 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.9 7.03 8.48 7.03 9.66C7.03 10.84 7.9 11.98 8.03 12.14C8.15 12.3 9.72 14.73 12.11 15.76C12.7 16.02 13.15 16.17 13.51 16.28C14.1 16.47 14.63 16.44 15.05 16.38C15.52 16.31 16.5 15.78 16.7 15.21C16.9 14.64 16.9 14.15 16.84 14.05C16.77 13.95 16.61 13.89 16.36 13.76C16.11 13.63 14.89 13.03 14.66 12.95C14.43 12.87 14.27 12.83 14.1 13.09C13.93 13.35 13.46 13.91 13.31 14.09C13.16 14.27 13 14.29 12.75 14.16C12.5 14.03 11.69 13.76 10.74 12.92C10.0 12.26 9.5 11.45 9.35 11.2C9.2 10.95 9.34 10.82 9.47 10.69C9.59 10.56 9.74 10.36 9.87 10.21C10 10.06 10.05 9.96 10.13 9.8C10.21 9.64 10.17 9.51 10.11 9.38C10.05 9.25 9.55 8.02 9.34 7.52C9.14 7.04 8.94 7.11 8.8 7.11C8.68 7.11 8.56 7.11 8.53 7.33Z"/></svg>
+        </a>
+        <a href="tel:8826971800" class="float-btn call-btn" title="Call Us">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/></svg>
+        </a>
+    </div>
+
+    <!-- JavaScript to Render Category Specific Ideas -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const cat = urlParams.get('cat');
+
+        const detailsMap = {
+            'modular-kitchen': {
+                title: 'Modular Kitchen Designs',
+                desc: 'Explore ergonomic L-shape, U-shape, island, and straight modular kitchens built with water-resistant materials.',
+                items: [
+                    { name: 'Glossy Acrylic Island Kitchen', img: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Matte Finish L-Shaped Kitchen', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Parallel Wood-Tone Kitchen', img: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80' }
+                ]
+            },
+            'wardrobe': {
+                title: 'Wardrobe & Closet Designs',
+                desc: 'Smart sliding doors, walk-in luxury closets, and loft-integrated storage solutions.',
+                items: [
+                    { name: 'Glass Door Walk-in Closet', img: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Modern Sliding Wardrobe', img: 'https://images.unsplash.com/photo-1558997519-83ea9252dfac?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Hinged Wooden Wardrobe', img: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80' }
+                ]
+            },
+            'bathroom': {
+                title: 'Bathroom Interior Designs',
+                desc: 'Sleek glass partitions, anti-skid tiles, modern vanity counters, and luxurious fixtures.',
+                items: [
+                    { name: 'Glass Partition Luxury Bath', img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Contemporary Vanity Counter', img: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Minimalist Spa-Style Bathroom', img: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80' }
+                ]
+            },
+            'bedroom': {
+                title: 'Master Bedroom Designs',
+                desc: 'Cozy and elegant bedrooms featuring designer headboards, ambient cove lighting, and study nooks.',
+                items: [
+                    { name: 'Luxury Headboard & Pendant Lights', img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Minimalist Neutral Bedroom', img: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Boho Chic Master Suite', img: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80' }
+                ]
+            },
+            'living-room': {
+                title: 'Living Room Interior Designs',
+                desc: 'Grand seating arrangements, statement accent walls, and elegant center tables.',
+                items: [
+                    { name: 'Contemporary Velvet Sofa Setup', img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Marble Accent Wall Living Room', img: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Warm Lighting Family Lounge', img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80' }
+                ]
+            },
+            'false-ceiling': {
+                title: 'False Ceiling Designs',
+                desc: 'POP designs, wooden rafters, and hidden LED strip lighting to add depth to your rooms.',
+                items: [
+                    { name: 'Cove Lighting Tray Ceiling', img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Wooden Rafter Living Ceiling', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Geometric Modern POP Ceiling', img: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80' }
+                ]
+            },
+            'tv-unit': {
+                title: 'TV Unit Wall Designs',
+                desc: 'Sleek entertainment consoles with concealed wire management and wooden panelling.',
+                items: [
+                    { name: 'Fluted Wooden Panel TV Unit', img: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Floating Marble TV Console', img: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80' },
+                    { name: 'Backlit Entertainment Wall', img: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80' }
+                ]
+            }
+        };
+
+        if (cat && detailsMap[cat]) {
+            const data = detailsMap[cat];
+            document.getElementById('tab-title').innerText = `Elite Craft Interior | ${data.title}`;
+            document.getElementById('main-title').innerText = data.title;
+            document.getElementById('main-desc').innerText = data.desc;
+
+            const gallery = document.getElementById('design-gallery');
+            gallery.innerHTML = '';
+            data.items.forEach(item => {
+                gallery.innerHTML += `
+                    <div class="portfolio-item" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('${item.img}');">
+                        ${item.name}
+                    </div>
+                `;
+            });
+        }
+    </script>
+</body>
+</html>
