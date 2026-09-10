@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="tab-title">Elite Craft Interior | Magazine</title>
+    <title>Magazine | Elite Craft Interior</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header & Navigation -->
     <header>
-        <div class="logo">Elite Craft <span>Interior</span></div>
+        <div class="logo"><a href="index.html" style="color:inherit; text-decoration:none;">Elite Craft <span>Interior</span></a></div>
         <nav>
             <a href="index.html">Home</a>
-            
-            <!-- Livspace Style Dropdown: Design Ideas -->
             <div class="dropdown">
                 <a href="#">Design Ideas ▾</a>
                 <div class="dropdown-content">
@@ -27,8 +25,6 @@
                     <a href="design-detail.html?cat=tv-unit">TV Unit Designs</a>
                 </div>
             </div>
-
-            <!-- Livspace Style Dropdown: Magazine -->
             <div class="dropdown">
                 <a href="#" class="active">Magazine ▾</a>
                 <div class="dropdown-content">
@@ -38,111 +34,79 @@
                     <a href="magazine-detail.html?cat=organisation">Home Organisation</a>
                 </div>
             </div>
-
             <a href="services.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html" class="btn-nav">Book Consultation</a>
         </nav>
     </header>
 
-    <!-- Dynamic Magazine Showcase Section -->
-    <section class="services">
-        <h1 id="main-title" style="font-size: 38px; color: #fff; margin-bottom: 15px;">Magazine & Insights</h1>
-        <p id="main-desc" style="color: #aaa; font-size: 16px; margin-bottom: 40px;">Expert tips, trending decor ideas, and vastu guides for your dream home.</p>
-        
-        <!-- Gallery Grid for Magazine Content -->
-        <div class="portfolio-grid" id="magazine-gallery">
-            <!-- Dynamically populated via JS -->
+    <!-- Dynamic Magazine Content Section -->
+    <main class="container" style="padding: 40px 5%; min-height: 70vh;">
+        <h1 id="magazine-title" style="margin-bottom: 30px; font-size: 2.2rem; color: #333;">Interior Magazine</h1>
+        <div id="magazine-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+            <!-- Content will be injected dynamically via JavaScript -->
         </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Elite Craft Interior. All Rights Reserved.</p>
     </footer>
 
-    <!-- Floating WhatsApp and Call Widget -->
-    <div class="floating-widget">
-        <a href="https://wa.me/918826971800?text=Hi,%20I%20want%20to%20know%20more%20about%20Elite%20Craft%20interior%20designs." target="_blank" class="float-btn whatsapp-btn" title="Chat on WhatsApp">
-            <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.57L5.06 16.26C4.24 14.93 3.8 13.44 3.8 11.91C3.8 7.41 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.9 7.03 8.48 7.03 9.66C7.03 10.84 7.9 11.98 8.03 12.14C8.15 12.3 9.72 14.73 12.11 15.76C12.7 16.02 13.15 16.17 13.51 16.28C14.1 16.47 14.63 16.44 15.05 16.38C15.52 16.31 16.5 15.78 16.7 15.21C16.9 14.64 16.9 14.15 16.84 14.05C16.77 13.95 16.61 13.89 16.36 13.76C16.11 13.63 14.89 13.03 14.66 12.95C14.43 12.87 14.27 12.83 14.1 13.09C13.93 13.35 13.46 13.91 13.31 14.09C13.16 14.27 13 14.29 12.75 14.16C12.5 14.03 11.69 13.76 10.74 12.92C10.0 12.26 9.5 11.45 9.35 11.2C9.2 10.95 9.34 10.82 9.47 10.69C9.59 10.56 9.74 10.36 9.87 10.21C10 10.06 10.05 9.96 10.13 9.8C10.21 9.64 10.17 9.51 10.11 9.38C10.05 9.25 9.55 8.02 9.34 7.52C9.14 7.04 8.94 7.11 8.8 7.11C8.68 7.11 8.56 7.11 8.53 7.33Z"/></svg>
-        </a>
-        <a href="tel:8826971800" class="float-btn call-btn" title="Call Us">
-            <svg viewBox="0 0 24 24"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/></svg>
-        </a>
-    </div>
-
-    <!-- JavaScript to Render Magazine Categories -->
+    <!-- JavaScript for Magazine Content -->
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const cat = urlParams.get('cat');
+        const category = urlParams.get('cat') || 'decor';
 
-        const magazineMap = {
-            'decor': {
-                title: 'Decor & Inspiration',
-                desc: 'Discover modern styling trends, color palettes, and creative home decor ideas.',
-                items: [
-                    { name: 'Minimalist Living Room Styling', img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Boho Chic Corner Decor', img: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Luxury Velvet Accent Chairs', img: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Indoor Plants & Greenery Styling', img: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Statement Wall Art Ideas', img: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Ambient Lighting & Mood Decor', img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80' }
+        const magazineData = {
+            "decor": {
+                title: "Decor & Inspiration Articles",
+                articles: [
+                    { title: "Top 10 Living Room Color Trends for 2026", desc: "Discover hues that make your space look expansive and warm.", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" },
+                    { title: "How to Style Statement Lighting in Dining Areas", desc: "Elevate your dining space with layered lighting techniques.", img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Bringing Nature Indoors with Urban Foliage", desc: "Best indoor plants to purify air and enhance home aesthetic.", img: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
-            'expert-advice': {
-                title: 'Expert Interior Advice',
-                desc: 'Professional tips on space planning, material selection, and budget optimization.',
-                items: [
-                    { name: 'How to Choose the Right Flooring', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Maximizing Space in Small Apartments', img: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Selecting Durable Kitchen Materials', img: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Lighting Guide for Every Room', img: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Smart Storage Solutions Explained', img: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Working with Interior Architects', img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80' }
+            "expert-advice": {
+                title: "Expert Design Advice",
+                articles: [
+                    { title: "How Much Does a Modular Kitchen Cost in India?", desc: "A comprehensive budget breakdown for laminates, acrylic, and hardware.", img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Choosing the Right Wood: Plywood vs MDF vs HDF", desc: "An expert architect guide on selecting durable materials for custom furniture.", img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Space Saving Hacks for Compact Apartments", desc: "Smart layout ideas to optimize small square footage without clutter.", img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
-            'vastu': {
-                title: 'Vastu Shastra Tips',
-                desc: 'Bring positive energy, peace, and prosperity into your home with authentic vastu guidelines.',
-                items: [
-                    { name: 'Vastu Guidelines for Main Entrance', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Ideal Kitchen Placement & Colors', img: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Master Bedroom Vastu Direction', img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Living Room Energy Flow', img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Pooja Room Placement & Setup', img: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Bathroom & Water Element Vastu', img: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80' }
+            "vastu": {
+                title: "Vastu Shastra Tips for Home",
+                articles: [
+                    { title: "Vastu Guidelines for Kitchen Placement & Colors", desc: "Ensure positive energy flow with correct southeast kitchen orientation.", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Master Bedroom Vastu: Bed Direction & Mirrors", desc: "Improve sleep quality and harmony by placing your bed in the right zone.", img: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Entrance and Foyer Vastu Tips for Wealth", desc: "Attract prosperity right from the main door entry point.", img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
-            'organisation': {
-                title: 'Home Organisation Ideas',
-                desc: 'Clever hacks and storage systems to keep your home clutter-free and neat.',
-                    items: [
-                    { name: 'Wardrobe Decluttering Secrets', img: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Modular Kitchen Pantry Organisation', img: 'https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Living Room Cable & Media Management', img: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Bathroom Vanity Storage Hacks', img: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Kids Room Toy & Book Storage', img: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80' },
-                    { name: 'Shoe Rack & Entryway Organisation', img: 'https://images.unsplash.com/photo-1558997519-83ea9252dfac?auto=format&fit=crop&w=800&q=80' }
+            "organisation": {
+                title: "Home Organisation & Storage Tips",
+                articles: [
+                    { title: "Wardrobe Decluttering System in 5 Easy Steps", desc: "Keep your clothes neat, organized, and accessible all year round.", img: "https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Kitchen Pantry Organization Ideas", desc: "Maximize storage jars, pull-out baskets, and corner carousels.", img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Clever Hidden Storage Tricks for Living Rooms", desc: "Multifunctional furniture pieces that hide clutter efficiently.", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" }
                 ]
             }
         };
 
-        if (cat && magazineMap[cat]) {
-            const data = magazineMap[cat];
-            document.getElementById('tab-title').innerText = `Elite Craft Interior | ${data.title}`;
-            document.getElementById('main-title').innerText = data.title;
-            document.getElementById('main-desc').innerText = data.desc;
+        const currentMag = magazineData[category] || magazineData["decor"];
+        document.getElementById('magazine-title').innerText = currentMag.title;
 
-            const gallery = document.getElementById('magazine-gallery');
-            gallery.innerHTML = '';
-            data.items.forEach(item => {
-                gallery.innerHTML += `
-                    <div class="portfolio-item" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('${item.img}');">
-                        ${item.name}
-                    </div>
-                `;
-            });
-        }
+        const magGrid = document.getElementById('magazine-grid');
+        magGrid.innerHTML = currentMag.articles.map(art => `
+            <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+                <img src="${art.img}" alt="${art.title}" style="width: 100%; height: 210px; object-fit: cover;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.15rem; color: #222; margin-bottom: 10px;">${art.title}</h3>
+                    <p style="color: #666; font-size: 0.92rem; margin-bottom: 20px; line-height: 1.5; flex-grow: 1;">${art.desc}</p>
+                    <a href="contact.html" style="color: #d97706; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Read Full Guide →</a>
+                </div>
+            </div>
+        `).join('');
     </script>
 </body>
 </html>
