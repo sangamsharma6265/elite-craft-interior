@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Details | Elite Craft Interior</title>
+    <title>Design Ideas | Elite Craft Interior</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,9 +40,9 @@
         </nav>
     </header>
 
-    <!-- Dynamic Content Section -->
+    <!-- Dynamic Design Ideas Content Section -->
     <main class="container" style="padding: 40px 5%; min-height: 70vh;">
-        <h1 id="category-title" style="margin-bottom: 30px; font-size: 2.2rem; color: #333;">Design Collection</h1>
+        <h1 id="design-title" style="margin-bottom: 30px; font-size: 2.2rem; color: #333;">Design Ideas Collection</h1>
         <div id="design-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
             <!-- Content will be injected dynamically via JavaScript -->
         </div>
@@ -53,80 +53,102 @@
         <p>&copy; 2026 Elite Craft Interior. All Rights Reserved.</p>
     </footer>
 
-    <!-- JavaScript to Handle Dynamic Content & Fixed Images -->
+    <!-- JavaScript for Design Ideas Content -->
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const category = urlParams.get('cat') || 'modular-kitchen';
 
-        const data = {
+        const designData = {
             "modular-kitchen": {
-                title: "Modular Kitchen Designs",
+                title: "Modular Kitchen Designs (6 Styles)",
                 items: [
-                    { title: "L-Shaped Contemporary Kitchen", img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Island Kitchen with Breakfast Bar", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Matte Finish Parallel Kitchen", img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" }
+                    { title: "Modern L-Shaped Glossy Kitchen", desc: "Maximizes corner space with seamless acrylic finish cabinets.", img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Contemporary U-Shaped Kitchen", desc: "Ample counter space and built-in appliance units for heavy cooking.", img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Minimalist Straight Kitchen", desc: "Ideal for compact apartments, blending elegance with utility.", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Luxury Island Kitchen Layout", desc: "Features a stunning central island with breakfast counter seating.", img: "https://images.unsplash.com/photo-1565183997392-2f6f122e5c12?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Two-Tone Handleless Kitchen", desc: "Matte grey and wooden texture combination for a chic look.", img: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Traditional Wooden Finish Kitchen", desc: "Rich warm wood tones with classic glass-pane shutter cabinets.", img: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
             "wardrobe": {
-                title: "Wardrobe & Closet Designs",
+                title: "Wardrobe Designs (6 Styles)",
                 items: [
-                    { title: "Walk-in Closet with Glass Doors", img: "https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Modern Sliding Wardrobe", img: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Hinged Wooden Wardrobe", img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" }
+                    { title: "Sliding Glass Door Wardrobe", desc: "Sleek tinted glass doors with integrated profile LED lighting.", img: "https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Floor-to-Ceiling Hinged Wardrobe", desc: "Maximum vertical storage with matte white soft-close panels.", img: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Walk-in Closet with Island Drawer", desc: "Luxury boutique style open shelving and jewellery compartments.", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Mirrored Sliding Wardrobe", desc: "Full-length mirror panels that visually expand compact bedrooms.", img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" },
+                    { title: "L-Shaped Corner Wardrobe", desc: "Smart engineering to utilize dead corner space efficiently.", img: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Boho Wooden Louvered Wardrobe", desc: "Natural louvered shutters for ventilation and rustic charm.", img: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
             "bathroom": {
-                title: "Modern Bathroom Designs",
+                title: "Bathroom Designs (6 Styles)",
                 items: [
-                    { title: "Spa-Inspired Glass Partition Bath", img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Minimalist Vanity & Marble Sink", img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Contemporary Wet Room", img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" }
+                    { title: "Contemporary Marble Finish Bath", desc: "Large-format vitrified tiles with wall-hung vanity unit.", img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Spa-Inspired Wooden Accent Bath", desc: "Teak wood elements paired with pebble stone flooring highlights.", img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Minimalist Glass Partition Shower", desc: "Frameless glass walk-in enclosure for a clean open feel.", img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Monochrome Industrial Bathroom", desc: "Matte black fittings against textured concrete grey walls.", img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Luxury Gold Accent Bathroom", desc: "Brushed gold faucets, backlit round mirror, and plush lighting.", img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Compact Urban Powder Room", desc: "Statement patterned floor tiles and wall-mounted basin.", img: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
             "bedroom": {
-                title: "Master Bedroom Designs",
+                title: "Master Bedroom Designs (6 Styles)",
                 items: [
-                    { title: "Minimalist Neutral Bedroom", img: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Boho Chic Master Suite", img: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Luxury Headboard with Accent Lighting", img: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80" }
+                    { title: "Upholstered Headboard & Panel Wall", desc: "Plush velvet headboard with wooden fluted panel backdrop.", img: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Minimalist Zen Platform Bed", desc: "Low-height wooden platform with warm ambient cove lighting.", img: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Classic Royal Molding Bedroom", desc: "Wall wainscoting frames with elegant brass pendant lights.", img: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Modern Industrial Bedroom", desc: "Exposed brick feature wall with iron-frame bedside tables.", img: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Cozy Neutral Palette Bedroom", desc: "Beige and pastel layers creating a soothing sleep environment.", img: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Luxury Suite with Sitting Area", desc: "Integrated study desk and plush armchair nook by the window.", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
             "living-room": {
-                title: "Living Room Designs",
+                title: "Living Room Designs (6 Styles)",
                 items: [
-                    { title: "Open-Plan Modern Living Area", img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Velvet Sofa & Accent Decor", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Contemporary Urban Lounge", img: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80" }
+                    { title: "Modern L-Shaped Sofa Lounge", desc: "Neutral fabric seating with marble coffee table centrepiece.", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Statement Gallery Wall Living Room", desc: "Curated art frames paired with warm ambient floor lamps.", img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Luxury Italian Marble Accent", desc: "Full-height marble slab TV wall with floating console.", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Open-Plan Living & Dining", desc: "Seamless spatial flow with partition wooden slat screens.", img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Boho Chic Living Space", desc: "Rattan furniture, indoor green planters, and textured rugs.", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Minimalist Urban Living Room", desc: "Clean lines, low profile furniture, and monochrome palette.", img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
             "false-ceiling": {
-                title: "False Ceiling Designs",
+                title: "False Ceiling Designs (6 Styles)",
                 items: [
-                    { title: "Tray Ceiling with Concealed LED", img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Wooden Rafter Living Ceiling", img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Geometric Modern POP Ceiling", img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" }
+                    { title: "Layered Tray Ceiling with Cove Lights", desc: "Classic recessed warm LED strip lighting across dual levels.", img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Wooden Rafter Ceiling Design", desc: "Natural wooden battens adding warmth to modern halls.", img: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Geometric Pop Pattern Ceiling", desc: "Contemporary angular gypsum board cutouts with spotlights.", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Circular Cove Bedroom Ceiling", desc: "Soft curved false ceiling with central chandelier fixture.", img: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Minimalist Fluted Panel Ceiling", desc: "Subtle vertical fluted detailing matching wall paneling.", img: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Perimeter Lighting False Ceiling", desc: "Clean dropped border with focused downlights for art pieces.", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" }
                 ]
             },
             "tv-unit": {
-                title: "TV Unit Designs",
+                title: "TV Unit Designs (6 Styles)",
                 items: [
-                    { title: "Floating Marble TV Console", img: "https://images.unsplash.com/photo-1593532414257-e6f9e013fb25?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Backlit Entertainment Wall", img: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80" },
-                    { title: "Minimalist Wooden TV Panel", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" }
+                    { title: "Floating Wooden Console Panel", desc: "Wall-mounted sleek wooden ledge with concealed wire management.", img: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Marble Backsplash TV Unit", desc: "Luxurious sintered stone wall panel with backlighting.", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Floor-to-Ceiling Entertainment Center", desc: "Combines closed storage cabinets, open display shelves, and TV niche.", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Fluted Panel Accent TV Wall", desc: "Vertical wooden fluting creating rich depth behind the screen.", img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Minimalist Ledge with Bookshelf", desc: "Clean floating shelf paired with side display towers.", img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" },
+                    { title: "Glass Display Cabinet TV Unit", desc: "Glass shutters with internal spotlighting for collectibles.", img: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" }
                 ]
             }
         };
 
-        const currentData = data[category] || data["modular-kitchen"];
-        document.getElementById('category-title').innerText = currentData.title;
+        const currentDesign = designData[category] || designData["modular-kitchen"];
+        document.getElementById('design-title').innerText = currentDesign.title;
 
-        const grid = document.getElementById('design-grid');
-        grid.innerHTML = currentData.items.map(item => `
-            <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-                <img src="${item.img}" alt="${item.title}" style="width: 100%; height: 220px; object-fit: cover;">
-                <div style="padding: 18px;">
-                    <h3 style="font-size: 1.1rem; color: #222; margin-bottom: 10px;">${item.title}</h3>
-                    <a href="contact.html" style="color: #d97706; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Enquire Design →</a>
+        const designGrid = document.getElementById('design-grid');
+        designGrid.innerHTML = currentDesign.items.map(item => `
+            <div style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+                <img src="${item.img}" alt="${item.title}" style="width: 100%; height: 210px; object-fit: cover;">
+                <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.15rem; color: #222; margin-bottom: 10px;">${item.title}</h3>
+                    <p style="color: #666; font-size: 0.92rem; margin-bottom: 20px; line-height: 1.5; flex-grow: 1;">${item.desc}</p>
+                    <a href="contact.html" style="color: #d97706; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Enquire Now →</a>
                 </div>
             </div>
         `).join('');
